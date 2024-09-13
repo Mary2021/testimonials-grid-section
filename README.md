@@ -1,4 +1,55 @@
-# Vuetify (Default)
+# Frontend Mentor - Testimonials grid section solution
+
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+- [Get started with Vuetify 3](#Vuetify)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+
+### Screenshot
+
+![](./design/desktop-preview.jpg)
+
+### Links
+
+- Solution URL: [https://github.com/Mary2021/](https://github.com/Mary2021/)
+- Live Site URL: [https://mary2021.github.io//](https://mary2021.github.io//)
+
+## My process
+
+### Built with
+
+- HTML
+- Sass
+- CSS grid
+- Mobile-first workflow
+- Vuetify
+
+### Useful resources
+
+- [An Interactive Guide to CSS Grid](https://www.joshwcomeau.com/css/interactive-guide-to-grid/#alignment-9)
+
+## Get started with Vuetify 3
+
+- [Getting started](https://vuetifyjs.com/en/getting-started/installation/)
+
+`npm create vuetify@latest`
 
 This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
 
