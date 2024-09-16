@@ -12,6 +12,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
 - [Get started with Vuetify 3](#Vuetify)
+- [Deploy to gh-pages](#deploy-to-gh-pages)
 - [Author](#author)
 
 ## Overview
@@ -53,7 +54,7 @@ Users should be able to:
 
 This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
 
-## ❗️ Important Links
+### ❗️ Important Links
 
 - 📄 [Docs](https://vuetifyjs.com/)
 - 🚨 [Issues](https://issues.vuetifyjs.com/)
@@ -61,7 +62,7 @@ This is the official scaffolding tool for Vuetify, designed to give you a head s
 - 🎮 [Playground](https://play.vuetifyjs.com/)
 - 💬 [Discord](https://community.vuetifyjs.com)
 
-## 💿 Install
+### 💿 Install
 
 Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
 
@@ -74,7 +75,7 @@ Set up your project using your preferred package manager. Use the corresponding 
 
 After completing the installation, your environment is ready for Vuetify development.
 
-## ✨ Features
+### ✨ Features
 
 - 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
 - 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
@@ -86,7 +87,7 @@ After completing the installation, your environment is ready for Vuetify develop
 
 These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
 
-## 💡 Usage
+### 💡 Usage
 
 This section covers how to start the development server and build your project for production.
 
@@ -114,7 +115,7 @@ yarn build
 
 Once the build process is completed, your application will be ready for deployment in a production environment.
 
-## 💪 Support Vuetify Development
+### 💪 Support Vuetify Development
 
 This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
 
@@ -126,7 +127,46 @@ This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library wi
 - [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
 - [Making a one-time donation with Paypal](https://paypal.me/vuetify)
 
-## 📑 License
+### 📑 License
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2016-present Vuetify, LLC
+
+## Deploy to gh-pages
+
+- [How to Deploy Your Vite/Vue app](https://mkay11.medium.com/how-to-deploy-your-vite-vue-3-application-in-github-pages-2023-2b842f50576a)
+
+- add your reponame to vite.config.ts
+
+```javascript
+export default defineConfig({
+  base: '/REPONAME/',
+  plugins: [],
+  ...
+})
+```
+
+- remove dist directory from .gitignore list!
+- `npm run build`
+- commit changes!
+- `git subtree push --prefix dist origin gh-pages` this command will push up your /dist into a new or existing gh-pages branch
+
+### For future deployments:
+
+- `npm install gh-pages --save-dev`
+- in your package.json add:
+
+```javascript
+"scripts": {
+  ...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  ...
+}
+```
+
+Now all you need to do is to run npm run deploy and your app is newly deployed to gh-pages.
+
+## Author
+
+- Website - [Mary P](https://github.com/Mary2021)
