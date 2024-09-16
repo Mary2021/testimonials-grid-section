@@ -148,40 +148,55 @@ p {
 }
 
 @media (min-width:962px) {
-  .v-card {
-  padding: 0.8rem !important;
-  margin-block-end: 0%;
-}
-
-  main {
+  .v-application {
     display: grid;
-    grid-template-columns: repeat(4, 22vw);
-    gap: 20px
+    justify-content: center;
+    
+  }
+  .v-application__wrap {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .v-main {
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    gap: 20px;
+    max-height: 80%;
+  }
+
+  .v-card {
+    padding: 0.8rem !important;
+    margin-block-end: 0%;
   }
 
   .v-card.daniel {
-  grid-column-start: 1;
-  grid-column-end: 3;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .v-card.jonathan {
+    display: grid;
     grid-column-start: 3;
     grid-column-end: 4;
   }
 
   .v-card.jeanette {
+    display: grid;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 2;
   }
 
   .v-card.patrick {
+    display: grid;
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 4;
   }
 
   .v-card.kira {
+    display: grid;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 4;
