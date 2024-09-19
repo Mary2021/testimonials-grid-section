@@ -6,12 +6,14 @@
         style="background-color: hsl(263, 55%, 52%); color: hsl(0, 0%, 100%)"
       >
         <template v-slot:prepend>
+          <h1>
           <v-avatar size="24">
             <v-img
               alt="Daniel"
               src="./../assets/image-daniel.jpg"
             ></v-img>
           </v-avatar>
+        </h1>
         </template>
         <v-card-text>
           I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
