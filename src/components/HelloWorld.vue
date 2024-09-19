@@ -108,10 +108,6 @@
 </script>
 
 <style>
-.v-application {
-  padding: 1.8rem !important;
-}
-
 .v-card {
   padding: 1.5rem !important;
   margin-block-end: 5%;
@@ -119,24 +115,32 @@
 
 .v-card-title {
   font-size: 0.7rem !important;
+  font-family: 'Barlow Semi Condensed';
 }
 
 .v-card-subtitle {
   font-size: 0.6rem !important;
   opacity: 50% !important;
+  font-family: 'Barlow Semi Condensed';
 }
 
 .v-card-text {
   font-weight: 600 !important;
+  font-family: 'Barlow Semi Condensed';
 }
 
 p {
   opacity: 70%;
   font-weight: 500 !important;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+  font-family: 'Barlow Semi Condensed';
 }
 
 @media (max-width: 961px) {
+  .v-application {
+    padding: 1.8rem !important;
+  } 
+
   .v-card {
     max-width: 400px;
   }
@@ -147,21 +151,20 @@ p {
   }
 }
 
-@media (min-width:962px) {
+@media (min-width: 962px) and (max-width:1080px) {
   .v-application {
     display: grid;
-    justify-content: center;
-    
   }
   .v-application__wrap {
     flex-wrap: wrap;
-    align-content: center;
+    padding-block: 4rem;
+    padding-inline: 2rem;
   }
   .v-main {
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
+    grid-template-columns: repeat(4, 1fr); /* 20vw */
     gap: 20px;
-    max-height: 80%;
+    max-height: 97%;
   }
 
   .v-card {
@@ -208,6 +211,238 @@ p {
     grid-column-start: 2;
     grid-column-end: 4;
     text-align: center;
+  }
+}
+
+@media (min-width: 1081px) and (max-width:1400px) {
+  .v-application {
+    display: grid;
+  }
+  .v-application__wrap {
+    flex-wrap: wrap;
+    padding-block: 3rem;
+    padding-inline: 5rem;
+  }
+  .v-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 20vw */
+    gap: 20px;
+    max-height: 100%;
+  }
+
+  .v-card {
+    padding: 0.8rem !important;
+    margin-block-end: 0%;
+  }
+
+  .v-card.daniel {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .v-card.jonathan {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .v-card.jeanette {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .v-card.patrick {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .v-card.kira {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  .attribution {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) and (max-width:1999px) {
+  .v-application {
+    display: grid;
+  }
+  .v-application__wrap {
+    flex-wrap: wrap;
+    padding-block: 6rem;
+    padding-inline: 10rem;
+  }
+  .v-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 20vw */
+    gap: 20px;
+    max-height: 100%;
+  }
+
+  .v-card {
+    padding: 0.8rem !important;
+    margin-block-end: 0%;
+  }
+
+  .v-avatar {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .v-card-title {
+    font-size: 0.8rem !important;
+  }
+
+  .v-card-subtitle {
+    font-size: 0.7rem !important;
+  }
+
+  .v-card-text {
+    font-size: 1.2rem !important;
+  }
+  
+  p{
+    font-size: 0.8rem !important;
+   }
+
+  .v-card.daniel {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .v-card.jonathan {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .v-card.jeanette {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .v-card.patrick {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .v-card.kira {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  .attribution {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+  }
+}
+
+@media (min-width: 2000px) and (max-width:2560px) {
+  .v-application {
+    display: grid;
+  }
+  .v-application__wrap {
+    flex-wrap: wrap;
+    padding-block: 9rem;
+    padding-inline: 14rem;
+  }
+  .v-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 20vw */
+    gap: 20px;
+    max-height: 100%;
+  }
+
+  .v-card {
+    padding: 2rem !important;
+    margin-block-end: 0%;
+  }
+
+  .v-avatar {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .v-card-title {
+    font-size: 1.5rem !important;
+  }
+
+  .v-card-subtitle {
+    font-size: 1.5rem !important;
+  }
+
+  .v-card-text {
+    font-size: 2rem !important;
+  }
+  
+  p{
+    font-size: 1.5rem !important;
+   }
+
+  .v-card.daniel {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .v-card.jonathan {
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .v-card.jeanette {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .v-card.patrick {
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .v-card.kira {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  .attribution {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 1.5rem !important;
   }
 }
 </style>
