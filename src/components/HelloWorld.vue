@@ -1,20 +1,22 @@
 <template>
       <v-card
         class="mx-auto daniel"
-        subtitle="Verified Graduate"
-        title="Daniel Clifford"
         style="background-color: hsl(263, 55%, 52%); color: hsl(0, 0%, 100%)"
       >
-        <template v-slot:prepend>
-          <h1>
+      <v-container>
+       <v-container id="avatar">
           <v-avatar size="24">
             <v-img
               alt="Daniel"
               src="./../assets/image-daniel.jpg"
             ></v-img>
           </v-avatar>
-        </h1>
-        </template>
+          <v-container id="title">
+            <v-card-title><h1>Daniel Clifford</h1></v-card-title>
+            <v-card-subtitle>Verified Graduate</v-card-subtitle>
+          </v-container>
+  </v-container>
+</v-container>
         <v-card-text>
           I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
           <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
@@ -115,12 +117,44 @@
   margin-block-end: 5%;
 }
 
+.v-container {
+  display: flex;
+  padding: 0% !important;
+}
+
+.v-container #avatar {
+  display: flex !important;
+  align-items: center;
+  padding: 0%;
+}
+
+.v-container #title {
+  display: flex !important;
+  flex-direction: column;
+  padding: 0% !important;
+  margin-left: 2% !important;
+}
+
+.v-container #title .v-card-title {
+  padding: 0% !important;
+}
+
+.v-container #title .v-card-subtitle {
+  padding: 0% !important;
+}
+
+h1 {
+  font-size: 0.7rem !important;
+  font-family: 'Barlow Semi Condensed';
+}
+
 .v-card-title {
   font-size: 0.7rem !important;
   font-family: 'Barlow Semi Condensed';
 }
 
 .v-card-subtitle {
+  display: block;
   font-size: 0.6rem !important;
   opacity: 50% !important;
   font-family: 'Barlow Semi Condensed';
@@ -147,6 +181,10 @@ p {
     max-width: 400px;
   }
 
+  .v-container {
+    margin-left: 2% !important;
+  }
+
   .attribution {
     text-align: center;
     font-size: 0.8rem;
@@ -164,7 +202,7 @@ p {
   }
   .v-main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 20vw */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     max-height: 97%;
   }
@@ -172,6 +210,10 @@ p {
   .v-card {
     padding: 0.8rem !important;
     margin-block-end: 0%;
+  }
+
+  .v-container {
+    margin-left: 2% !important;
   }
 
   .v-card.daniel {
@@ -227,7 +269,7 @@ p {
   }
   .v-main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 20vw */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     max-height: 100%;
   }
@@ -235,6 +277,10 @@ p {
   .v-card {
     padding: 0.8rem !important;
     margin-block-end: 0%;
+  }
+
+  .v-container {
+    margin-left: 2% !important;
   }
 
   .v-card.daniel {
@@ -290,7 +336,7 @@ p {
   }
   .v-main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 20vw */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     max-height: 100%;
   }
@@ -298,6 +344,10 @@ p {
   .v-card {
     padding: 0.8rem !important;
     margin-block-end: 0%;
+  }
+
+  .v-container {
+    margin-left: 2% !important;
   }
 
   .v-avatar {
@@ -374,7 +424,7 @@ p {
   }
   .v-main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 20vw */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     max-height: 100%;
   }
@@ -382,6 +432,10 @@ p {
   .v-card {
     padding: 2rem !important;
     margin-block-end: 0%;
+  }
+
+  .v-container {
+    margin-left: 1% !important;
   }
 
   .v-avatar {
